@@ -1,0 +1,71 @@
+/* Style for the self-driving cars website (modern minimalist design) */
+body {
+  margin: 0;
+  padding: 0;
+  background: #FFFFFF;
+  color: #333333;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Navigation menu */
+nav {
+  text-align: center;
+  margin-bottom: 2em;
+}
+nav ul.nav-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul.nav-menu li {
+  display: inline;
+  margin: 0 15px;
+}
+nav ul.nav-menu a {
+  text-decoration: none;
+  color: #0066cc;
+  font-weight: bold;
+}
+nav ul.nav-menu a:hover {
+  text-decoration: underline;
+}
+
+/* Heading styles */
+h1 {
+  text-align: center;
+  font-size: 2em;
+  margin: 0.5em 0 0.8em;
+  color: #222222;
+}
+h2 {
+  font-size: 1.25em;
+  margin: 1em 0 0.5em;
+  color: #222222;
+}
+
+/* List styles */
+ul {
+  margin: 0 0 1.5em 1.2em;
+  padding: 0;
+}
+ul li {
+  margin: 0.5em 0;
+}
+
+/* Image styling */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1em auto;
+}
+
+/* Ensure link targets open in new tab for external sources page */
+a[target="_blank"]::after {
+  content: " 🔗";
+  font-size: 0.9em;
+}
