@@ -1,70 +1,103 @@
-body {
+/* Base Reset */
+* {
   margin: 0;
   padding: 0;
-  background: #FFFFFF;
-  color: #333333;
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.6;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
+  box-sizing: border-box;
 }
 
-/* Navigation menu */
-nav {
-  text-align: center;
-  margin-bottom: 2em;
+/* Root Variables */
+:root {
+  --primary: #4a90e2;
+  --accent: #50e3c2;
+  --bg: #f9f9f9;
+  --text: #333;
+  --white: #fff;
+  --radius: 12px;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
-nav ul.nav-menu {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+
+/* Body Styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  padding: 2rem;
 }
-nav ul.nav-menu li {
-  display: inline;
-  margin: 0 15px;
+
+/* Headings */
+h1, h2, h3 {
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: var(--primary);
 }
-nav ul.nav-menu a {
+
+/* Container */
+.container {
+  max-width: 1000px;
+  margin: auto;
+  background-color: var(--white);
+  padding: 2rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--primary);
+  padding: 1rem 2rem;
+  color: white;
+  border-radius: var(--radius);
+  margin-bottom: 2rem;
+}
+
+.navbar a {
+  color: white;
   text-decoration: none;
-  color: #0066cc;
-  font-weight: bold;
+  margin-left: 1rem;
+  font-weight: 500;
 }
-nav ul.nav-menu a:hover {
+
+.navbar a:hover {
   text-decoration: underline;
 }
 
-/* Heading styles */
-h1 {
-  text-align: center;
-  font-size: 2em;
-  margin: 0.5em 0 0.8em;
-  color: #222222;
-}
-h2 {
-  font-size: 1.25em;
-  margin: 1em 0 0.5em;
-  color: #222222;
+/* Buttons */
+.button {
+  background-color: var(--accent);
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  box-shadow: var(--shadow);
+  transition: background-color 0.3s ease;
 }
 
-/* List styles */
+.button:hover {
+  background-color: #3dd3b2;
+}
+
+/* Section */
+section {
+  margin-bottom: 2rem;
+}
+
+/* Lists */
 ul {
-  margin: 0 0 1.5em 1.2em;
-  padding: 0;
-}
-ul li {
-  margin: 0.5em 0;
+  margin-left: 1.5rem;
 }
 
-/* Image styling */
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 1em auto;
+li {
+  margin-bottom: 0.5rem;
 }
 
-/* Ensure link targets open in new tab for external sources page */
-a[target="_blank"]::after {
-  content: " 🔗";
-  font-size: 0.9em;
+/* Footer */
+.footer {
+  text-align: center;
+  margin-top: 3rem;
+  color: #777;
+  font-size: 0.9rem;
 }
